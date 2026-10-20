@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Arkanoid</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="wrap">
+    <header id="hud">
+      <span class="stat">SCORE <b id="score">0</b></span>
+      <span class="stat">LEVEL <b id="level">1</b></span>
+      <span class="stat">LIVES <b id="lives">3</b></span>
+    </header>
+
+    <div id="stage">
+      <canvas id="game" width="800" height="600"></canvas>
+
+      <div id="overlay" class="visible">
+        <h1 id="ov-title">ARKANOID</h1>
+        <p id="ov-text">Break every brick. Don't drop the ball.</p>
+        <button id="ov-btn">START</button>
+        <p class="hint">Move: mouse / touch / &larr; &rarr; &nbsp;&middot;&nbsp; Launch: click or Space &nbsp;&middot;&nbsp; Pause: P</p>
+      </div>
+    </div>
+
+    <footer id="foot">
+      <span>High score: <b id="hiscore">0</b></span>
+      <button id="muteBtn" type="button">Sound: on</button>
+    </footer>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
